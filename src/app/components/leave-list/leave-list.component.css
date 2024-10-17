@@ -1,0 +1,16 @@
+.leave-list {
+    max-width: 600px;
+    margin: auto;
+  }
+  .leave-list table {
+    width: 100%;
+    border-collapse: collapse;
+    
+  }
+  .leave-list th, .leave-list td {
+    border: 5px solid #0e0e0e;
+    padding: 8px;
+    text-align: left;
+    font-size: medium;
+  }
+  

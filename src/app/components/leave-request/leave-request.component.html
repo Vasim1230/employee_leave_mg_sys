@@ -1,0 +1,32 @@
+<div class="leave-request-form">
+    <h2>Request Leave</h2>
+    <form #leaveForm="ngForm" (ngSubmit)="submitLeaveRequest(leaveForm)" novalidate>
+      <label>
+        Employee Name:
+        <input type="text" [(ngModel)]="leave.employeeName" name="employeeName" required />
+        <div *ngIf="leaveForm.submitted && !leave.employeeName" class="error">Employee Name is required.</div>
+      </label>
+      <label>
+        Leave Type:
+        <select [(ngModel)]="leave.leaveType" name="leaveType" required>
+          <option value="">Select</option>
+          <option value="Sick Leave">Sick Leave</option>
+          <option value="Vacation">Vacation</option>
+          <option value="Personal Leave">Personal Leave</option>
+        </select>
+        <div *ngIf="leaveForm.submitted && !leave.leaveType" class="error">Leave Type is required.</div>
+      </label>
+      <label>
+        Start Date:
+        <input type="date" [(ngModel)]="leave.startDate" name="startDate" required />
+        <div *ngIf="leaveForm.submitted && !leave.startDate" class="error">Start Date is required.</div>
+      </label>
+      <label>
+        End Date:
+        <input type="date" [(ngModel)]="leave.endDate" name="endDate" required />
+        <div *ngIf="leaveForm.submitted && !leave.endDate" class="error">End Date is required.</div>
+      </label>
+      <button type="submit" [disabled]="leaveForm.invalid">Submit Request</button>
+    </form>
+  </div>
+  
