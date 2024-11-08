@@ -3,29 +3,29 @@
 The Employee Leave Management System is a web-based application built using Angular that allows organizations to manage employee leave requests efficiently. This system helps HR teams, managers, and employees track and manage leave applications and approvals.
 
 # Installation
-1.Node.js: v12.x or higher
+Node.js: v12.x or higher
 
-2.npm: v6.x or higher
+npm: v6.x or higher
 
-3.Angular CLI: v12.x or higher
+Angular CLI: v12.x or higher
 
-4.Code Editor: Visual Studio Code (to run the project)
+Code Editor: Visual Studio Code (to run the project)
 
-Clone the repository
+Step 1: Clone the repository
 
-Navigate to the project directory
+Step 2: Navigate to the project directory
 
-Install project dependencies:
+Step 3: Install project dependencies:
 
 ```bash
 npm install -g @angular/cli 
 ```
-Run the Angular development server:
+Step 4: Run the Angular development server:
 
 ```bash
 ng serve
 ```
-Open your browser and visit http://localhost:4200 to view the application.
+Step 5: Open your browser and visit http://localhost:4200 to view the application.
 
 
 # Features
