@@ -8,19 +8,27 @@ The Employee Leave Management System is a web-based application built using Angu
 3.Angular CLI: v12.x or higher
 4.Code Editor: Visual Studio Code (to run the project)
 
-```bash
+Clone the repository
 
-git clone https://github.com/yourusername/employee-leave-management.git
-cd employee-leave-management
-npm install
+Navigate to the project directory
+
+Install project dependencies:
+
+```bash
+npm install -g @angular/cli 
+```
+Run the Angular development server:
+
+```bash
 ng serve
 ```
 Open your browser and visit http://localhost:4200 to view the application.
 
+
 # Features
 Employee Dashboard:
-Submit leave requests 
-Track the status of submitted leave requests (pending, approved, rejected)
+Submit leave requests, 
+Track the status of submitted leave requests (pending, approved, rejected),
 View leave history and summary
 
 # Technology Stack
